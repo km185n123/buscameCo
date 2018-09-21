@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buscame.oncor.buscame">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- acceso al gps -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- acceso al almacenamiento y a la camara -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_buscamicarro_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_buscamicarro_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Intro"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Welcome" />
+        <activity android:name=".Register.Activity.termsAndConditions" />
+        <activity
+            android:name=".Register.Activity.FormCreateNewUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register.Activity.modalDeclineTermAndConditions"
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name=".Profile.Activity.Profile"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity android:name=".InfoAssocieted" />
+        <activity
+            android:name=".SearchServiceCenter.Activity.findServicesCenter"
+            android:label="@string/title_activity_find_services_center">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_contrato" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <!-- facebook sdk -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- <service android:name=".GPSTracker"/> -->
+        <activity android:name=".SearchServiceCenter.Activity.InfoCenterService" />
+        <activity
+            android:name=".Login.Login.Activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".DashBoard.Activity.DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Register.Activity.Slider" />
+        <activity
+            android:name=".Register.Activity.SliderIntro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Device.Activity.NewDevice"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".Services.Activity.TypeServices" />
+        <activity
+            android:name=".Services.Activity.ListServices"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity android:name=".Device.Activity.FirstNewDevice" />
+        <activity android:name=".Historical.Activity.Historical" />
+
+        <service android:name=".Firebase.Notification">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.FirebaseIntanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Historical.Activity.HistoricalMaps"
+            android:label="@string/title_activity_historical_maps2" />
+        <activity android:name=".Device.Activity.ListDevices" />
+        <activity
+            android:name=".Device.Activity.EditDevice"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity android:name=".Profile.Activity.AboutUs" />
+        <activity android:name=".Profile.Activity.EditDataProfile" />
+        <activity android:name=".Services.Activity.ServiceCenters" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+    </application>
+
+</manifest>

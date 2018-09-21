@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_modules"
+            android:icon="@drawable/ic_module"
+            android:title="Dispositivos" />
+        <item
+            android:id="@+id/nav_add_device"
+            android:icon="@drawable/ic_add"
+            android:title="Agregar dispositivo" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_user2"
+            android:title="Perfil" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_historical"
+                android:icon="@drawable/ic_contrato"
+                android:title="Historicos" />
+
+            <item
+                android:id="@+id/nav_services"
+                android:icon="@drawable/ic_services"
+                android:title="Servicios" />
+
+        </menu>
+    </item>
+
+</menu>

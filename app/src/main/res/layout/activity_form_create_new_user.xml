@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+
+
+    <!-- Objeto con Scroll -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/contentListPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".Register.Activity.FormCreateNewUser">
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                       <!-- icons-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_user2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_phone" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_email" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_home" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_user2" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_password" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Register_Layout_Icon">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_contrato" />
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+                        <!-- Form-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="90"
+                            android:layout_marginRight="40dp"
+                            android:orientation="vertical">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/Register_TextInputLayout">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/name"
+                                    android:inputType="textPersonName"
+                                    android:hint="@string/text_hint_form_name"
+                                    style="@style/Register_AutoCompleteTextView"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/Register_TextInputLayout">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/phone"
+                                    android:inputType="phone"
+                                    android:hint="@string/text_hint_form_phone"
+                                    style="@style/Register_AutoCompleteTextView"
+                                    android:maxLength="10"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/Register_TextInputLayout">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/email"
+                                    android:inputType="textEmailAddress"
+                                    android:hint="@string/text_hint_form_email"
+                                    style="@style/Register_AutoCompleteTextView"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/Register_TextInputLayout">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/adress"
+                                    android:inputType="textPersonName"
+                                    android:hint="@string/text_hint_form_adress"
+                                    style="@style/Register_AutoCompleteTextView"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/Register_TextInputLayout">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/user"
+                                    android:inputType="textPersonName"
+                                    android:hint="@string/text_hint_form_user"
+                                    style="@style/Register_AutoCompleteTextView"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/Register_TextInputLayout">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/password"
+                                    android:inputType="textPassword"
+                                    android:hint="@string/text_hint_form_password"
+                                    style="@style/Register_AutoCompleteTextView"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/checkTermsAndConditions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:shadowColor="@color/colorPrimary"/>
+
+                                <TextView
+                                    android:id="@+id/textTermsAndConditions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/decline_terms_text_title"/>
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- App Bar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Collapser -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!-- Imagen del detalle -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:srcCompat="@drawable/background"
+                    />
+
+                <ImageView
+                    android:id="@+id/image_paralax"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="center"
+                    app:layout_collapseMode="parallax"
+                    android:src="@drawable/logo"
+                    />
+
+
+            </FrameLayout>
+
+
+            <!-- Toolbar -->
+            <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbarAddPassenger"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/CustomActionBar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrate"/>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- FAB -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_next"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_new_user"
+        app:backgroundTint="@color/colorAccent"
+        app:borderWidth="0dp"
+        app:elevation="2dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right|end"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <Button
+        android:id="@+id/btnNewAcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_white"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"
+        android:text="@string/login_text_button_register"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

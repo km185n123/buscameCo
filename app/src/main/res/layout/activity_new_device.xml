@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    android:layout_weight="30">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/dialog_shape"
+                    android:layout_weight="60">
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/transparent"
+                android:layout_weight="10">
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/transparent"
+                android:layout_weight="50"
+                android:gravity="center|bottom">
+
+                <ImageView
+                    android:id="@+id/imgBox"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/caja"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                >
+                <!--BODY-->
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="60"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                 >
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/device_title"
+                      android:textColor="@color/white"
+                      android:textSize="25sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/white"
+                      android:text="@string/device_description"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginLeft="20dp"
+                      android:gravity="center"
+                      android:textSize="15sp"/>
+
+
+                  <android.support.design.widget.TextInputLayout
+                      style="@style/Register_TextInputLayout"
+                      android:textColorHint="@color/white">
+
+                      <AutoCompleteTextView
+                          android:id="@+id/txtcode"
+                          android:inputType="textPersonName"
+                          android:hint="Ingrese codigo"
+                          android:textColorHint="@color/white"
+                          android:textColor="@color/white"
+                          style="@style/Register_AutoCompleteTextView"
+                          android:layout_margin="16dp"/>
+
+                  </android.support.design.widget.TextInputLayout>
+              </LinearLayout>
+             <!--FOOT-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:background="@drawable/dialog_button_left"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:text="Cancelar"/>
+
+                    <Button
+                        android:id="@+id/btnAsociate"
+                        android:layout_width="0dp"
+                        android:background="@drawable/dialog_button_rigth"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:text="Activar"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="horizontal"> </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</RelativeLayout>

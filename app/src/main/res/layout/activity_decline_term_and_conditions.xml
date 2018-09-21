@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register.Activity.modalDeclineTermAndConditions">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/decline_terms_text_title"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/decline_terms_text_note_one"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="48dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <Button
+            android:id="@+id/btnCallCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/decline_terms_text_button_contact"
+            android:background="@drawable/rounded_button_white"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/decline_terms_text_note_two"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnCancel_decline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/decline_terms_text_button_cancel"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

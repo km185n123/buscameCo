@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">buscame</string>
+    <string name="facebook_app_id">950044951844799</string>
+    <string name="textWelcome">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de </string>
+    <string name="text_hint_verification_code">Ingrese su codigo de activacion</string>
+    <string name="message_error_txtVerificationCode">Debe ingresar un codigo valido</string>
+    <string name="text_termsAndConditions"> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</string>
+    <string name="text_hint_form_name">Nombre</string>
+    <string name="text_hint_form_user">Usuario</string>
+    <string name="text_hint_form_password">Contraseña</string>
+    <string name="text_hint_form_phone">Movil</string>
+    <string name="text_hint_form_adress">Direccion</string>
+    <string name="text_hint_form_email">Correo electronico</string>
+    <string name="decline_terms_text_note_one">Sr.(a)usuario lo invitamos  a contactarse  con nuestros profesionales para solucionar sus dudas</string>
+    <string name="decline_terms_text_button_contact">Contacto centro de\n atencion y servicio</string>
+    <string name="decline_terms_text_note_two">Sr. (a) usuario recuerde que si no esta deacuerdo con los terminos y condiciones  no podemos prestar el servicio de Buscame.</string>
+    <string name="decline_terms_text_button_cancel">Cancelar</string>
+    <string name="decline_terms_text_title">TERMINOS Y CONDICIONES</string>
+    <string name="text_profile">Busque el sitio mas cercano\n para instalacion del equipo\n en su vehiculo</string>
+    <string name="title_activity_find_services_center">Map</string>
+    <string name="message_permission_gps_denied_disable">Recuerde que no Podra continuar hasta que no Active los permisos de ubicacion</string>
+    <string name="message_permission_gps_need_permissions">Se necesitan permisos de ubicacion</string>
+    <string name="info_center_service_text_btn">Ingresar</string>
+    <string name="info_center_service_message">Agradecemos acercarse a nuestro asociado para realizar la instalacion del equipo en su vehiculo</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Usuario</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="login_text_button_login">Ingresar</string>
+    <string name="login_text_button_register">Registrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Esta contraseña es incorrecta</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="validate_message_obligatory_field">Campo obligatorio</string>
+    <string name="device_title">Ingrese Codigo</string>
+    <string name="device_description">Ingrese el codigo que se encuentra impreso en la caja del dispositivo e ingreselo para asociarlo a tu cuenta</string>
+    <string name="type_services_hint_spinner">Dispositivos</string>
+    <string name="card_type_service_relate_article">Articulos Relacionados</string>
+    <string name="label_menu_floating">Dispositivos</string>
+    <string name="txtdashboard">Buscame</string>
+    <string name="title_date_historical">Filtro por fechas</string>
+    <string name="hint_start_date">De</string>
+    <string name="hint_end_date">Hasta</string>
+    <string name="format_date">dd-MM-yyyy</string>
+    <string name="title_activity_historical_maps">Historical</string>
+    <string name="title_activity_historical_maps2">Historical</string>
+    <string name="confirm_password">Confirme la contraseña</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="title_my_ubication">Mi ubicacion</string>
+    <string name="camera">Camara</string>
+    <string name="gallery">Galeria</string>
+    <string name="citys_hint_spinner">Ciudades</string>
+    <string name="radio">Radio</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>
